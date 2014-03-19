@@ -32,5 +32,7 @@
     <rule ref="rulesets/java/finalizers.xml" />
     <rule ref="rulesets/java/imports.xml" />
     <rule ref="rulesets/java/junit.xml" />
-    <rule ref="rulesets/java/logging-java.xml" />
+    <rule ref="rulesets/java/logging-java.xml" >
+        <exclude name="GuardLogStatementJavaUtil" />
+    </rule>
 </ruleset>
