@@ -1,5 +1,5 @@
-Ness Computing PMD Rulesets
-===========================
+OpenTable PMD Rulesets
+======================
 
 Component Charter
 -----------------
@@ -14,4 +14,4 @@ Component Level
 * No code here, just configuration.
 
 ----
-Copyright (C) 2013 Ness Computing, Inc.
+Copyright (C) 2016 OpenTable, Inc.
