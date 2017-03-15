@@ -53,8 +53,10 @@
     <rule ref="rulesets/java/strictexception.xml" >
         <exclude name="AvoidCatchingGenericException" />
         <exclude name="AvoidThrowingRawExceptionTypes" />
+        <exclude name="SignatureDeclareThrowsException" />
     </rule>
     <rule ref="rulesets/java/strings.xml" >
+        <exclude name="ConsecutiveAppendsShouldReuse" />
         <exclude name="ConsecutiveLiteralAppends" />
     </rule>
     <rule ref="rulesets/java/sunsecure.xml" />
