@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.opentable</groupId>
     <artifactId>otj-parent</artifactId>
-    <version>2</version>
+    <version>80</version>
   </parent>
 
   <scm>
@@ -19,7 +19,7 @@
   <groupId>com.opentable</groupId>
   <artifactId>otj-pmd-rulesets</artifactId>
   <name>otj-pmd-rulesets</name>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>OpenTable PMD rulesets</description>
 </project>
