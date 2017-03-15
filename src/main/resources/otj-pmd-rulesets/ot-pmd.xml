@@ -28,8 +28,13 @@
     <rule ref="rulesets/java/braces.xml" />
     <rule ref="rulesets/java/clone.xml" />
     <rule ref="rulesets/java/design.xml" >
+        <exclude name="AvoidDeeplyNestedIfStmts" />
+        <exclude name="AvoidReassigningParameters" />
         <exclude name="AvoidSynchronizedAtMethodLevel" />
+        <exclude name="CompareObjectsWithEquals" />
+        <exclude name="ConfusingTernary" />
         <exclude name="OptimizableToArrayCall" />
+        <exclude name="UncommentedEmptyConstructor" />
     </rule>
     <rule ref="rulesets/java/empty.xml" />
     <rule ref="rulesets/java/finalizers.xml" />
@@ -37,10 +42,12 @@
     <rule ref="rulesets/java/junit.xml" />
     <rule ref="rulesets/java/logging-java.xml" >
         <exclude name="GuardLogStatementJavaUtil" />
+        <exclude name="InvalidSlf4jMessageFormat" />
     </rule>
     <rule ref="rulesets/java/migrating.xml" />
     <rule ref="rulesets/java/strictexception.xml" >
         <exclude name="AvoidCatchingGenericException" />
+        <exclude name="AvoidThrowingRawExceptionTypes" />
     </rule>
     <rule ref="rulesets/java/strings.xml" >
         <exclude name="ConsecutiveLiteralAppends" />
