@@ -28,6 +28,7 @@
     <rule ref="rulesets/java/braces.xml" />
     <rule ref="rulesets/java/clone.xml" />
     <rule ref="rulesets/java/design.xml" >
+        <exclude name="AccessorMethodGeneration" />
         <exclude name="AvoidDeeplyNestedIfStmts" />
         <exclude name="AvoidReassigningParameters" />
         <exclude name="AvoidSynchronizedAtMethodLevel" />
