@@ -13,13 +13,13 @@
     <connection>scm:git:git://github.com/opentable/otj-pmd-rulesets.git</connection>
     <developerConnection>scm:git:git@github.com:opentable/otj-pmd-rulesets.git</developerConnection>
     <url>http://github.com/opentable/otj-pmd-rulesets</url>
-    <tag>otj-pmd-rulesets-1.1.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <groupId>com.opentable</groupId>
   <artifactId>otj-pmd-rulesets</artifactId>
   <name>otj-pmd-rulesets</name>
-  <version>1.1.1</version>
+  <version>1.1.2-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>OpenTable PMD rulesets</description>
 </project>
