@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.opentable</groupId>
     <artifactId>otj-parent</artifactId>
-    <version>80</version>
+    <version>99</version>
   </parent>
 
   <scm>
