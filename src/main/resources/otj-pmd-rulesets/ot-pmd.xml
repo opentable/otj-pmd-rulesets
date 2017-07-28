@@ -39,6 +39,8 @@
         <exclude name="OptimizableToArrayCall" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="UncommentedEmptyMethodBody" />
+        <exclude name="UseVarargs" />
+        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
     </rule>
     <rule ref="rulesets/java/empty.xml" />
     <rule ref="rulesets/java/finalizers.xml" />
