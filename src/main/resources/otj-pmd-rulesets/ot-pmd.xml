@@ -55,7 +55,9 @@
         <exclude name="GuardLogStatementJavaUtil" />
         <exclude name="InvalidSlf4jMessageFormat" />
     </rule>
-    <rule ref="rulesets/java/migrating.xml" />
+    <rule ref="rulesets/java/migrating.xml">
+        <exclude name="JUnit4TestShouldUseTestAnnotation" />
+    </rule>
     <rule ref="rulesets/java/strictexception.xml" >
         <exclude name="AvoidCatchingGenericException" />
         <exclude name="AvoidThrowingRawExceptionTypes" />
