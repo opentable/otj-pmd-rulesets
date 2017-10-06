@@ -1,6 +1,10 @@
 otj-pmd-rulesets changelog
 ==========================
 
+1.2.0
+-----
+* open source!
+
 1.1.1
 -----
 * Exclude AccessorMethodGeneration rule
