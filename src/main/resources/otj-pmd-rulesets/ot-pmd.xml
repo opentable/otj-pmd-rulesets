@@ -31,6 +31,11 @@
         <exclude name="GuardLogStatement" />
         <exclude name="JUnit4TestShouldUseTestAnnotation" />
         <exclude name="UnusedFormalParameter"/>
+        <!-- added -->
+        <exclude name="MissingOverride" />
+        <exclude name="LooseCoupling" />
+        <!-- A prod best left to the ide -->
+        <exclude name="ForLoopCanBeForeach" />
     </rule>
     <rule ref="category/java/codestyle.xml">
         <exclude name="ConfusingTernary" />
@@ -38,29 +43,97 @@
         <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
         <exclude name="TooManyStaticImports" />
         <exclude name="UselessParentheses" />
+        <!-- Added in PMD 6+, complains if you rely on implicit noargs -->
+        <exclude name="AtLeastOneConstructor" />
+        <!-- I'm sympathetic to the aims of this rule, but... -->
+        <exclude name="MethodArgumentCouldBeFinal" />
+        <!-- same.. -->
+        <exclude name="LocalVariableCouldBeFinal" />
+        <!-- ha! -->
+        <exclude name="AvoidFinalLocalVariable" />
+        <!-- spiritual agreement, but -->
+        <exclude name="ShortVariable" />
+        <!-- yeah, right require comments for every default acccess method, class, constructor. That's sane -->
+        <exclude name="CommentDefaultAccessModifier" />
+        <!-- I agree, but ... -->
+        <exclude name="BooleanGetMethodName" />
+        <exclude name="LongVariable" />
+        <exclude name="OnlyOneReturn" />
+        <exclude name="DefaultPackage" />
+        <exclude name="VariableNamingConventions" />
+        <exclude name="ClassNamingConventions" />
+        <!-- aka boilerplate -->
+        <exclude name="CallSuperInConstructor" />
+        <!-- nice idea, bad idea -->
+        <exclude name="PrematureDeclaration" />
+        <exclude name="ShortMethodName" />
+        <exclude name="MethodNamingConventions" />
+        <exclude name="AvoidPrefixingMethodParameters" />
+        <exclude name="ShortClassName" />
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
         <exclude name="GodClass" />
+        <!-- Though please don't -->
         <exclude name="AvoidCatchingGenericException" />
         <exclude name="AvoidThrowingRawExceptionTypes" />
         <exclude name="SignatureDeclareThrowsException" />
+        <!-- Also added. -->
+        <exclude name="LawOfDemeter" />
+        <exclude name="DataClass" />
+        <!-- Without context configured, meaningless -->
+        <exclude name="LoosePackageCoupling" />
+        <!-- On the fence on this one - usually is code smell -->
+        <exclude name="TooManyMethods" />
+        <!-- I've always found the next two...dubious -->
+        <exclude name="CyclomaticComplexity" />
+        <exclude name="NPathComplexity" />
+        <exclude name="ExcessivePublicCount" />
+        <exclude name="NcssCount" />
+        <exclude name="ExcessiveImports" />
+        <!-- I wish this could be active -->
+        <exclude name="ExcessiveMethodLength" />
     </rule>
     <rule ref="category/java/documentation.xml">
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="UncommentedEmptyMethodBody" />
+        <!-- Added for PMD 6+ Complains if constructor/class is not commented -->
+        <exclude name="CommentRequired" />
+        <exclude name="CommentSize" />
     </rule>
     <rule ref="category/java/errorprone.xml">
         <exclude name="CompareObjectsWithEquals" />
         <exclude name="InvalidSlf4jMessageFormat" />
+        <!-- Added these too -->
+        <exclude name="DataflowAnomalyAnalysis" />
+        <!-- eg no member should not be transient, final or static. -->
+        <exclude name="BeanMembersShouldSerialize"/>
+        <!-- no. just no. This should be discussed in PRs not by PMD -->
+        <exclude name="AvoidLiteralsInIfCondition" />
+        <!-- On the border here, but ... -->
+        <exclude name="AvoidFieldNameMatchingMethodName" />
+        <!-- no assigning to null! -->
+        <exclude name="NullAssignment" />
     </rule>
     <rule ref="category/java/multithreading.xml">
         <exclude name="AvoidSynchronizedAtMethodLevel" />
+        <!-- Added -->
+        <!-- people misuse, for certain but should be a PR issue -->
+        <exclude name="AvoidUsingVolatile" />
+        <!-- As a local variable - I'm sorry that's awful advice -->
+        <exclude name="UseConcurrentHashMap" />
+        <!-- J2EE doesn't like threads so no one should ??? -->
+        <exclude name="DoNotUseThreads" />
     </rule>
     <rule ref="category/java/performance.xml">
         <exclude name="OptimizableToArrayCall" />
         <exclude name="ConsecutiveAppendsShouldReuse" />
         <exclude name="ConsecutiveLiteralAppends" />
+        <!-- Added -->
+        <!-- borderline eg private boolean goo = false; -->
+        <exclude name="RedundantFieldInitializer" />
+        <!-- case by case, most of the time stream/map is better -->
+        <exclude name="AvoidInstantiatingObjectsInLoops" />
     </rule>
     <rule ref="category/java/security.xml" />
 
