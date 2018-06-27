@@ -22,56 +22,47 @@
     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
 
     <description>OpenTable PMD Ruleset</description>
-
-    <rule ref="rulesets/java/basic.xml" >
-    </rule>
-    <rule ref="rulesets/java/braces.xml" />
-    <rule ref="rulesets/java/clone.xml" />
-    <rule ref="rulesets/java/design.xml" >
+    <rule ref="category/java/bestpractices.xml">
         <exclude name="AccessorMethodGeneration" />
-        <exclude name="AvoidDeeplyNestedIfStmts" />
         <exclude name="AvoidReassigningParameters" />
-        <exclude name="AvoidSynchronizedAtMethodLevel" />
-        <exclude name="CompareObjectsWithEquals" />
-        <exclude name="ConfusingTernary" />
-        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
-        <exclude name="GodClass" />
-        <exclude name="OptimizableToArrayCall" />
-        <exclude name="UncommentedEmptyConstructor" />
-        <exclude name="UncommentedEmptyMethodBody" />
         <exclude name="UseVarargs" />
-        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
-    </rule>
-    <rule ref="rulesets/java/empty.xml" />
-    <rule ref="rulesets/java/finalizers.xml" />
-    <rule ref="rulesets/java/imports.xml" >
-        <exclude name="TooManyStaticImports" />
-    </rule>
-    <rule ref="rulesets/java/junit.xml">
         <exclude name="JUnitTestContainsTooManyAsserts" />
         <exclude name="JUnitAssertionsShouldIncludeMessage" />
-    </rule>
-    <rule ref="rulesets/java/logging-java.xml" >
-        <exclude name="GuardLogStatementJavaUtil" />
-        <exclude name="InvalidSlf4jMessageFormat" />
-    </rule>
-    <rule ref="rulesets/java/migrating.xml">
+        <exclude name="GuardLogStatement" />
         <exclude name="JUnit4TestShouldUseTestAnnotation" />
+        <exclude name="UnusedFormalParameter"/>
     </rule>
-    <rule ref="rulesets/java/strictexception.xml" >
+    <rule ref="category/java/codestyle.xml">
+        <exclude name="ConfusingTernary" />
+        <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
+        <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
+        <exclude name="TooManyStaticImports" />
+        <exclude name="UselessParentheses" />
+    </rule>
+    <rule ref="category/java/design.xml">
+        <exclude name="AvoidDeeplyNestedIfStmts" />
+        <exclude name="GodClass" />
         <exclude name="AvoidCatchingGenericException" />
         <exclude name="AvoidThrowingRawExceptionTypes" />
         <exclude name="SignatureDeclareThrowsException" />
     </rule>
-    <rule ref="rulesets/java/strings.xml" >
+    <rule ref="category/java/documentation.xml">
+        <exclude name="UncommentedEmptyConstructor" />
+        <exclude name="UncommentedEmptyMethodBody" />
+    </rule>
+    <rule ref="category/java/errorprone.xml">
+        <exclude name="CompareObjectsWithEquals" />
+        <exclude name="InvalidSlf4jMessageFormat" />
+    </rule>
+    <rule ref="category/java/multithreading.xml">
+        <exclude name="AvoidSynchronizedAtMethodLevel" />
+    </rule>
+    <rule ref="category/java/performance.xml">
+        <exclude name="OptimizableToArrayCall" />
         <exclude name="ConsecutiveAppendsShouldReuse" />
         <exclude name="ConsecutiveLiteralAppends" />
     </rule>
-    <rule ref="rulesets/java/sunsecure.xml" />
-    <rule ref="rulesets/java/unnecessary.xml" >
-        <exclude name="UselessParentheses" />
-    </rule>
-    <rule ref="rulesets/java/unusedcode.xml" >
-        <exclude name="UnusedFormalParameter"/>
-    </rule>
+    <rule ref="category/java/security.xml" />
+
+
 </ruleset>
