@@ -94,6 +94,8 @@
         <exclude name="ExcessiveImports" />
         <!-- I wish this could be active -->
         <exclude name="ExcessiveMethodLength" />
+        <!-- sounds good, but a lot of false positives -->
+        <exclude name="CouplingBetweenObjects" />
     </rule>
     <rule ref="category/java/documentation.xml">
         <exclude name="UncommentedEmptyConstructor" />
@@ -135,6 +137,8 @@
         <exclude name="RedundantFieldInitializer" />
         <!-- case by case, most of the time stream/map is better -->
         <exclude name="AvoidInstantiatingObjectsInLoops" />
+        <!-- obviously true, but triggers for a single concatenation which is unreasonable -->
+        <exclude name="UseStringBufferForStringAppends" />
     </rule>
     <rule ref="category/java/security.xml" />
 
