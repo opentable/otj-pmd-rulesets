@@ -70,6 +70,7 @@
         <exclude name="MethodNamingConventions" />
         <exclude name="AvoidPrefixingMethodParameters" />
         <exclude name="ShortClassName" />
+        <exclude name="GenericsNaming" />
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
