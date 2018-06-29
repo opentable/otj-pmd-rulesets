@@ -145,6 +145,8 @@
         <exclude name="AvoidFileStream" />
         <!-- too many fp -->
         <exclude name="UnnecessaryWrapperObjectCreation" />
+        <!-- A reasonable rule, except leads to frustrating breakage - you also have to check if string is not blank -->
+        <exclude name="SimplifyStartsWith" />
     </rule>
     <rule ref="category/java/security.xml" />
 
