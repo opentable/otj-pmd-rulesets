@@ -96,6 +96,9 @@
         <exclude name="ExcessiveMethodLength" />
         <!-- sounds good, but a lot of false positives -->
         <exclude name="CouplingBetweenObjects" />
+        <!-- Chris, David have expressed reservations to these two -->
+        <exclude name="UseObjectForClearerAPI" />
+        <exclude name="TooManyFields" />
     </rule>
     <rule ref="category/java/documentation.xml">
         <exclude name="UncommentedEmptyConstructor" />
@@ -139,6 +142,9 @@
         <exclude name="AvoidInstantiatingObjectsInLoops" />
         <!-- obviously true, but triggers for a single concatenation which is unreasonable -->
         <exclude name="UseStringBufferForStringAppends" />
+        <exclude name="AvoidFileStream" />
+        <!-- too many fp -->
+        <exclude name="UnnecessaryWrapperObjectCreation" />
     </rule>
     <rule ref="category/java/security.xml" />
 
