@@ -71,6 +71,8 @@
         <exclude name="AvoidPrefixingMethodParameters" />
         <exclude name="ShortClassName" />
         <exclude name="GenericsNaming" />
+        <!-- Way too picky @Goofy("star") vs @Goofy(value = "star") is ok -->
+        <exclude name="UnnecessaryAnnotationValueElement" />
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
