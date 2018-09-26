@@ -1,6 +1,14 @@
 otj-pmd-rulesets changelog
 ==========================
 
+1.2.3
+-----
+* Add a couple exceptions for PMD 6.7.0
+
+1.2.2
+-----
+* converted rule set to modern PMD 6.5.0 engine format
+
 1.2.0
 -----
 * open source!

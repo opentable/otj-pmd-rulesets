@@ -73,6 +73,10 @@
         <exclude name="GenericsNaming" />
         <!-- Way too picky @Goofy("star") vs @Goofy(value = "star") is ok -->
         <exclude name="UnnecessaryAnnotationValueElement" />
+        <!-- Too agressive! For example serialNumberUUID is wrong -->
+        <exclude name="FieldNamingConventions" />
+        <!-- misguided attempt to avoid boolean setter getter confusion -->
+        <exclude name="LinguisticNaming" />
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
