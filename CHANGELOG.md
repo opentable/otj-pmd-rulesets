@@ -1,6 +1,10 @@
 otj-pmd-rulesets changelog
 ==========================
 
+1.2.4
+-----
+* Exclude UseUnderscoresInNumericLiterals
+
 1.2.3
 -----
 * Add a couple exceptions for PMD 6.7.0
