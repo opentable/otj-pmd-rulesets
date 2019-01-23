@@ -77,6 +77,8 @@
         <exclude name="FieldNamingConventions" />
         <!-- misguided attempt to avoid boolean setter getter confusion -->
         <exclude name="LinguisticNaming" />
+        <!-- requires _ in numerics, which is crazy -->
+        <exclude name="UseUnderscoresInNumericLiterals" />
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
