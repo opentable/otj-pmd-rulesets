@@ -108,6 +108,8 @@
         <exclude name="UseObjectForClearerAPI" />
         <exclude name="TooManyFields" />
         <exclude name="ExcessiveParameterList" />
+        <!-- This is just silly -->
+        <exclude name="AvoidUncheckedExceptionsInSignatures" />
     </rule>
     <rule ref="category/java/documentation.xml">
         <exclude name="UncommentedEmptyConstructor" />
