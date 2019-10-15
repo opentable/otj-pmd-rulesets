@@ -79,6 +79,8 @@
         <exclude name="LinguisticNaming" />
         <!-- requires _ in numerics, which is crazy -->
         <exclude name="UseUnderscoresInNumericLiterals" />
+        <!-- Intellij can't handle this rule -->
+        <exclude name="UnnecessaryFullyQualifiedName" />
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
