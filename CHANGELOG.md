@@ -1,6 +1,14 @@
 otj-pmd-rulesets changelog
 ==========================
 
+1.2.6
+-----
+* Exclude UnnecessaryFullyQualifiedName
+
+1.2.5
+-----
+* Exclude AvoidUncheckedExceptionsInSignatures
+
 1.2.4
 -----
 * Exclude UseUnderscoresInNumericLiterals
