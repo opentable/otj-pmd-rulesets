@@ -122,7 +122,7 @@
     </rule>
     <rule ref="category/java/errorprone.xml">
         <exclude name="CompareObjectsWithEquals" />
-        <exclude name="InvalidSlf4jMessageFormat" />
+      
         <!-- Added these too -->
         <exclude name="DataflowAnomalyAnalysis" />
         <!-- eg no member should not be transient, final or static. -->
