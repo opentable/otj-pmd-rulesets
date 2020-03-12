@@ -1,6 +1,8 @@
 otj-pmd-rulesets changelog
 ==========================
-
+1.2.8
+-----
+* Customize AvoidDuplicateLiterals to be less annoying
 1.2.6
 -----
 * Exclude UnnecessaryFullyQualifiedName
