@@ -97,7 +97,8 @@
         <!-- On the fence on this one - usually is code smell -->
         <exclude name="TooManyMethods" />
         <!-- I've always found the next two...dubious -->
-        <exclude name="CyclomaticComplexity" />
+        <exclude name="CognitiveComplexity" />
+	<exclude name="CyclomaticComplexity" />
         <exclude name="NPathComplexity" />
         <exclude name="ExcessivePublicCount" />
         <exclude name="NcssCount" />
