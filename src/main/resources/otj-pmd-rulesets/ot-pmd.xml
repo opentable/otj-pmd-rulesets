@@ -81,6 +81,7 @@
         <exclude name="UseUnderscoresInNumericLiterals" />
         <!-- Intellij can't handle this rule -->
         <exclude name="UnnecessaryFullyQualifiedName" />
+        <exclude name="UnnecessarySemicolon"/>
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="AvoidDeeplyNestedIfStmts" />
@@ -132,11 +133,11 @@
     </rule>
     <rule ref="category/java/errorprone.xml">
         <exclude name="ReturnEmptyCollectionRatherThanNull" />
+        <exclude name="NonSerializableClass"/>
+        <exclude name="TestClassWithoutTestCases"/>
 	<exclude name="CompareObjectsWithEquals" />
         <!-- Added these too -->
         <exclude name="DataflowAnomalyAnalysis" />
-        <!-- eg no member should not be transient, final or static. -->
-        <exclude name="BeanMembersShouldSerialize"/>
         <!-- no. just no. This should be discussed in PRs not by PMD -->
         <exclude name="AvoidLiteralsInIfCondition" />
         <!-- On the border here, but ... -->
