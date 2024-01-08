@@ -38,6 +38,8 @@
         <exclude name="ForLoopCanBeForeach" />
     </rule>
     <rule ref="category/java/codestyle.xml">
+        <!-- too many fp -->
+        <exclude name="UnnecessaryBoxing" />
         <exclude name="ConfusingTernary" />
         <exclude name="FieldDeclarationsShouldBeAtStartOfClass" />
         <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
@@ -49,18 +51,15 @@
         <exclude name="MethodArgumentCouldBeFinal" />
         <!-- same.. -->
         <exclude name="LocalVariableCouldBeFinal" />
-        <!-- ha! -->
-        <exclude name="AvoidFinalLocalVariable" />
         <!-- spiritual agreement, but -->
         <exclude name="ShortVariable" />
         <!-- yeah, right require comments for every default acccess method, class, constructor. That's sane -->
         <exclude name="CommentDefaultAccessModifier" />
         <!-- I agree, but ... -->
         <exclude name="BooleanGetMethodName" />
+        <exclude name="UseDiamondOperator" />
         <exclude name="LongVariable" />
         <exclude name="OnlyOneReturn" />
-        <exclude name="DefaultPackage" />
-        <exclude name="VariableNamingConventions" />
         <exclude name="ClassNamingConventions" />
         <!-- aka boilerplate -->
         <exclude name="CallSuperInConstructor" />
@@ -68,7 +67,6 @@
         <exclude name="PrematureDeclaration" />
         <exclude name="ShortMethodName" />
         <exclude name="MethodNamingConventions" />
-        <exclude name="AvoidPrefixingMethodParameters" />
         <exclude name="ShortClassName" />
         <exclude name="GenericsNaming" />
         <!-- Way too picky @Goofy("star") vs @Goofy(value = "star") is ok -->
@@ -84,6 +82,7 @@
         <exclude name="UnnecessarySemicolon"/>
     </rule>
     <rule ref="category/java/design.xml">
+        <exclude name="ClassWithOnlyPrivateConstructorsShouldBeFinal" />
         <exclude name="AvoidDeeplyNestedIfStmts" />
         <exclude name="GodClass" />
         <!-- Though please don't -->
@@ -124,7 +123,6 @@
     </rule>
     <rule ref="category/java/errorprone.xml/AvoidDuplicateLiterals">
         <properties>
-            <property name="separator" value="," />
             <property name="maxDuplicateLiterals" value="8" />
             <property name="minimumLength" value="3" />
             <property name="skipAnnotations" value="true" />
@@ -135,9 +133,7 @@
         <exclude name="ReturnEmptyCollectionRatherThanNull" />
         <exclude name="NonSerializableClass"/>
         <exclude name="TestClassWithoutTestCases"/>
-	<exclude name="CompareObjectsWithEquals" />
-        <!-- Added these too -->
-        <exclude name="DataflowAnomalyAnalysis" />
+	    <exclude name="CompareObjectsWithEquals" />
         <!-- no. just no. This should be discussed in PRs not by PMD -->
         <exclude name="AvoidLiteralsInIfCondition" />
         <!-- On the border here, but ... -->
@@ -167,10 +163,6 @@
         <!-- obviously true, but triggers for a single concatenation which is unreasonable -->
         <exclude name="UseStringBufferForStringAppends" />
         <exclude name="AvoidFileStream" />
-        <!-- too many fp -->
-        <exclude name="UnnecessaryWrapperObjectCreation" />
-        <!-- A reasonable rule, except leads to frustrating breakage - you also have to check if string is not blank -->
-        <exclude name="SimplifyStartsWith" />
     </rule>
     <rule ref="category/java/security.xml" />
 
