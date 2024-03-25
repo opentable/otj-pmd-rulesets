@@ -1,5 +1,11 @@
 otj-pmd-rulesets changelog
 ==========================
+
+7.0.1
+-----
+* Fine tuning false positives: drop PMD.UnusedLocalVariable,ExceptionAsFlowControl,UselessQualifiedThis
+* Avoid pulling in unndeeded dependencies, making the tree as trim as possible
+
 7.0.0
 -----
 * For PMD 7 compataibility - should NOT be used with PMD < 7
