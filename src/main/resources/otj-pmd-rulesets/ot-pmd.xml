@@ -36,8 +36,11 @@
         <exclude name="LooseCoupling" />
         <!-- A prod best left to the ide -->
         <exclude name="ForLoopCanBeForeach" />
+        <exclude name="UnusedLocalVariable" />
     </rule>
     <rule ref="category/java/codestyle.xml">
+        <exclude name="UselessQualifiedThis" />
+        <exclude name="UseExplicitTypes" />
         <!-- too many fp -->
         <exclude name="UnnecessaryBoxing" />
         <exclude name="ConfusingTernary" />
@@ -82,6 +85,8 @@
         <exclude name="UnnecessarySemicolon"/>
     </rule>
     <rule ref="category/java/design.xml">
+        <exclude name="SimplifyBooleanReturns" />
+        <exclude name="ExceptionAsFlowControl" />
         <exclude name="ClassWithOnlyPrivateConstructorsShouldBeFinal" />
         <exclude name="AvoidDeeplyNestedIfStmts" />
         <exclude name="GodClass" />
@@ -103,8 +108,6 @@
         <exclude name="ExcessivePublicCount" />
         <exclude name="NcssCount" />
         <exclude name="ExcessiveImports" />
-        <!-- I wish this could be active -->
-        <exclude name="ExcessiveMethodLength" />
         <!-- sounds good, but a lot of false positives -->
         <exclude name="CouplingBetweenObjects" />
         <!-- Chris, David have expressed reservations to these 3 -->
