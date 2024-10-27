@@ -1,6 +1,11 @@
 otj-pmd-rulesets changelog
 ==========================
 
+7.0.2
+----
+* AvoidSynchronizedStatement is excluded. It's a stupid rule, put in to help
+people not run afoul of Virtual Threads, but... it's just a bad rule.
+
 7.0.1
 -----
 * Fine tuning false positives: drop SimplifyBooleanReturns, UnusedLocalVariable,ExceptionAsFlowControl,UselessQualifiedThis, UseExplicitTypes
