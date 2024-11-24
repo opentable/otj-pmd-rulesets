@@ -1,6 +1,10 @@
 otj-pmd-rulesets changelog
 ==========================
 
+7.0.3
+-----
+* Several rules changed their names (to remove their junit specific naming)
+
 7.0.2
 ----
 * AvoidSynchronizedStatement is excluded. It's a stupid rule, put in to help
