@@ -18,7 +18,8 @@ people not run afoul of Virtual Threads, but... it's just a bad rule.
 
 7.0.0
 -----
-* For PMD 7 compataibility - should NOT be used with PMD < 7
+* For PMD 7 compatibility - should NOT be used with PMD < 7
+
 1.2.8
 -----
 * Customize AvoidDuplicateLiterals to be less annoying
