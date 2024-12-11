@@ -26,10 +26,10 @@
         <exclude name="AccessorMethodGeneration" />
         <exclude name="AvoidReassigningParameters" />
         <exclude name="UseVarargs" />
-        <exclude name="JUnitTestContainsTooManyAsserts" />
-        <exclude name="JUnitAssertionsShouldIncludeMessage" />
+        <exclude name="UnitTestContainsTooManyAsserts" />
+        <exclude name="UnitTestAssertionsShouldIncludeMessage" />
         <exclude name="GuardLogStatement" />
-        <exclude name="JUnit4TestShouldUseTestAnnotation" />
+        <exclude name="UnitTestShouldUseTestAnnotation" />
         <exclude name="UnusedFormalParameter"/>
         <!-- added -->
         <exclude name="MissingOverride" />
