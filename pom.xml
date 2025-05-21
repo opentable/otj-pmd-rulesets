@@ -64,4 +64,5 @@
   <version>7.0.6-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>OpenTable PMD rulesets</description>
+  <url>https://github.com/opentable/otj-pdm-rulesets</url>
 </project>
