@@ -32,7 +32,7 @@
   <groupId>com.opentable</groupId>
   <artifactId>otj-pmd-rulesets</artifactId>
   <name>otj-pmd-rulesets</name>
-  <version>7.0.3-SNAPSHOT</version>
+  <version>7.0.4-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>OpenTable PMD rulesets</description>
 </project>
