@@ -23,6 +23,8 @@
 
     <description>OpenTable PMD Ruleset</description>
     <rule ref="category/java/bestpractices.xml">
+        <exclude name="ImplicitFunctionalInterface" />
+        <exclude name="ExhaustiveSwitchHasDefault" />
         <exclude name="AccessorMethodGeneration" />
         <exclude name="AvoidReassigningParameters" />
         <exclude name="UseVarargs" />
