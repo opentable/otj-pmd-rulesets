@@ -42,6 +42,22 @@
     <basepom.release.profiles>basepom.central-release</basepom.release.profiles>
   </properties>
 
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>opentable</id>
+      <name>OpenTable</name>
+      <url>https://github.com/opentable</url>
+    </developer>
+  </developers>
   <groupId>com.opentable</groupId>
   <artifactId>otj-pmd-rulesets</artifactId>
   <name>otj-pmd-rulesets</name>
