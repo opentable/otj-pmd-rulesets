@@ -29,6 +29,7 @@
     <tag>HEAD</tag>
   </scm>
   <properties>
+    <basepom.release.push-changes>true</basepom.release.push-changes>
     <project.build.targetJdk>11</project.build.targetJdk>
     <maven.compiler.target>${project.build.targetJdk}</maven.compiler.target>
     <project.build.systemJdk>${project.build.targetJdk}</project.build.systemJdk>
@@ -61,7 +62,7 @@
   <groupId>com.opentable</groupId>
   <artifactId>otj-pmd-rulesets</artifactId>
   <name>otj-pmd-rulesets</name>
-  <version>7.0.6-SNAPSHOT</version>
+  <version>7.0.7-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>OpenTable PMD rulesets</description>
   <url>https://github.com/opentable/otj-pdm-rulesets</url>
