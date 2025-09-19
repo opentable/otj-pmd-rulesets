@@ -41,7 +41,6 @@
         <exclude name="UnusedLocalVariable" />
     </rule>
     <rule ref="category/java/codestyle.xml">
-        <exclude name="AssignmentInOperand" />
         <exclude name="ModifierOrder" />
         <exclude name="TypeParameterNamingConventions" />
         <exclude name="UselessQualifiedThis" />
@@ -139,6 +138,7 @@
         </properties>
     </rule>
     <rule ref="category/java/errorprone.xml">
+        <exclude name="AssignmentInOperand" />
         <exclude name="ReplaceJavaUtilDate" />
         <exclude name="ReturnEmptyCollectionRatherThanNull" />
         <exclude name="NonSerializableClass"/>
