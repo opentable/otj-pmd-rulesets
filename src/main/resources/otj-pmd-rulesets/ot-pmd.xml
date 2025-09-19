@@ -41,6 +41,7 @@
         <exclude name="UnusedLocalVariable" />
     </rule>
     <rule ref="category/java/codestyle.xml">
+        <exclude name="AssignmentInOperand" />
         <exclude name="ModifierOrder" />
         <exclude name="TypeParameterNamingConventions" />
         <exclude name="UselessQualifiedThis" />
