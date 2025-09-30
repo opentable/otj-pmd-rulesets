@@ -41,6 +41,8 @@
         <exclude name="UnusedLocalVariable" />
     </rule>
     <rule ref="category/java/codestyle.xml">
+        <exclude name="ModifierOrder" />
+        <exclude name="TypeParameterNamingConventions" />
         <exclude name="UselessQualifiedThis" />
         <exclude name="UseExplicitTypes" />
         <!-- too many fp -->
@@ -120,6 +122,7 @@
         <exclude name="AvoidUncheckedExceptionsInSignatures" />
     </rule>
     <rule ref="category/java/documentation.xml">
+        <exclude name="DanglingJavadoc" />
         <exclude name="UncommentedEmptyConstructor" />
         <exclude name="UncommentedEmptyMethodBody" />
         <!-- Added for PMD 6+ Complains if constructor/class is not commented -->
@@ -135,6 +138,8 @@
         </properties>
     </rule>
     <rule ref="category/java/errorprone.xml">
+        <exclude name="AssignmentInOperand" />
+        <exclude name="ReplaceJavaUtilDate" />
         <exclude name="ReturnEmptyCollectionRatherThanNull" />
         <exclude name="NonSerializableClass"/>
         <exclude name="TestClassWithoutTestCases"/>
