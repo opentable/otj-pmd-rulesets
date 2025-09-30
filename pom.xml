@@ -26,7 +26,7 @@
     <connection>scm:git:git://github.com/opentable/otj-pmd-rulesets.git</connection>
     <developerConnection>scm:git:git@github.com:opentable/otj-pmd-rulesets.git</developerConnection>
     <url>http://github.com/opentable/otj-pmd-rulesets</url>
-    <tag>otj-pmd-rulesets-7.0.7</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <basepom.release.push-changes>true</basepom.release.push-changes>
@@ -62,7 +62,7 @@
   <groupId>com.opentable</groupId>
   <artifactId>otj-pmd-rulesets</artifactId>
   <name>otj-pmd-rulesets</name>
-  <version>7.0.7</version>
+  <version>7.0.8-SNAPSHOT</version>
   <packaging>jar</packaging>
   <description>OpenTable PMD rulesets</description>
   <url>https://github.com/opentable/otj-pdm-rulesets</url>
