@@ -1,6 +1,12 @@
 otj-pmd-rulesets changelog
 ==========================
 
+7.0.8
+-----
+* Add a shared SpotBugs exclusion ruleset, initially excluding
+  `USO_UNSAFE_METHOD_SYNCHRONIZATION` and
+  `USO_UNSAFE_STATIC_METHOD_SYNCHRONIZATION`.
+
 7.0.3
 -----
 * Several rules changed their names (to remove their junit specific naming)
