@@ -20,7 +20,7 @@ people not run afoul of Virtual Threads, but... it's just a bad rule.
 -----
 * Fine tuning false positives: drop SimplifyBooleanReturns, UnusedLocalVariable,ExceptionAsFlowControl,UselessQualifiedThis, UseExplicitTypes
 * Remove unused rule ExcessiveMethodLength
-* Avoid pulling in unndeeded dependencies, making the tree as trim as possible
+* Avoid pulling in unneeded dependencies, making the tree as trim as possible
 
 7.0.0
 -----
